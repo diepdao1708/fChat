@@ -41,7 +41,6 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@id/phone_edit_txt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/login_txt" />
 

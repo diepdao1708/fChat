@@ -1,27 +1,25 @@
-package com.hola360.lwac.data.repository
+package com.vn.fchat.data.repository
 
 import android.app.Application
 import android.content.Context
 import com.google.gson.Gson
 import com.hola360.lwac.data.api.RetrofitHelper
-import com.hola360.lwac.data.api.response.submitresponse.SubmitResponse
-import com.hola360.lwac.data.api.response.userresponse.SubmitBody
-import com.hola360.lwac.data.api.response.userresponse.SubmitItem
-import com.hola360.lwac.utils.Constants
+import com.vn.fchat.data.model.User
+import com.vn.fchat.ui.utils.Constants.LOGIN_TYPE
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
-class SubmitThemeRepository(context: Context) {
+class UserRepository(context: Context) {
     private val retrofitHelper: RetrofitHelper = RetrofitHelper.getInstance(context)
 
-    suspend fun submitTheme(
-        list: List<SubmitItem>
-    ): SubmitResponse? =
+    suspend fun checkLogin(
+        user: User
+    ): String? =
         withContext(Dispatchers.Default) {
             try {
                 val gson = Gson()
-                val json = gson.toJson(SubmitBody(list))
-                retrofitHelper.remoteServices.submitTheme(Constants.SUBMIT_TYPE, json)
+                val json = gson.toJson(user)
+                retrofitHelper.remoteServices.checkLogin(LOGIN_TYPE, json)
             } catch (ex: Exception) {
                 null
             }

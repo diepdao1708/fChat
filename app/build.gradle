@@ -3,6 +3,10 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
+
+
+    id 'kotlin-parcelize'
+    id 'org.jetbrains.kotlin.plugin.parcelize'
 }
 
 android {
@@ -54,4 +58,13 @@ dependencies {
     implementation "androidx.navigation:navigation-runtime-ktx:2.5.2"
     implementation "androidx.navigation:navigation-fragment-ktx:2.5.2"
     implementation "androidx.navigation:navigation-ui-ktx:2.5.2"
+    implementation retrofit_lib
+    implementation okhttp_lib
+    implementation glide_lib
+    implementation room_lib
+    implementation event_bus_lib
+
+    kapt glide_annotation
+    kapt room_runtime
+    annotationProcessor room_annotation
 }

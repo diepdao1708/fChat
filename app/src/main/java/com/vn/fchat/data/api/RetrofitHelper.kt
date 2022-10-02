@@ -1,7 +1,7 @@
 package com.hola360.lwac.data.api
 
 import android.content.Context
-import com.hola360.lwac.data.api.base.BaseRetrofitHelper
+import com.vn.fchat.data.api.base.BaseRetrofitHelper
 import com.google.gson.GsonBuilder
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import com.vn.fchat.data.api.RemoteServices

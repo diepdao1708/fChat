@@ -1,4 +1,4 @@
-package com.hola360.lwac.data.api.response
+package com.vn.fchat.data.api.response
 
 sealed class DataResponse<T> constructor(var loadingStatus: LoadingStatus) {
     class DataLoading<T>(private val loadingType : LoadingStatus) : DataResponse<T>(loadingType)

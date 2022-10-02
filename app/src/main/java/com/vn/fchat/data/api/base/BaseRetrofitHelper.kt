@@ -1,4 +1,4 @@
-package com.hola360.lwac.data.api.base
+package com.vn.fchat.data.api.base
 
 import android.content.Context
 import okhttp3.OkHttpClient

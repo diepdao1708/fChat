@@ -1,4 +1,4 @@
-package com.hola360.lwac.data.api.response
+package com.vn.fchat.data.api.response
 
 sealed class ResultDataResponse<T> constructor(val resultCode: Int) {
     class ResultDataEmpty<T> : ResultDataResponse<T>(-1)

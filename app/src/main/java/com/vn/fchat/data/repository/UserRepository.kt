@@ -2,8 +2,10 @@ package com.vn.fchat.data.repository
 
 import android.app.Application
 import android.content.Context
+import android.util.Log
 import com.google.gson.Gson
 import com.hola360.lwac.data.api.RetrofitHelper
+import com.vn.fchat.data.api.response.loginresponse.LoginResponse
 import com.vn.fchat.data.model.User
 import com.vn.fchat.ui.utils.Constants.LOGIN_TYPE
 import kotlinx.coroutines.Dispatchers
@@ -14,13 +16,15 @@ class UserRepository(context: Context) {
 
     suspend fun checkLogin(
         user: User
-    ): String? =
+    ): LoginResponse? =
         withContext(Dispatchers.Default) {
             try {
                 val gson = Gson()
                 val json = gson.toJson(user)
-                retrofitHelper.remoteServices.checkLogin(LOGIN_TYPE, json)
+                Log.e("----", "checkLogin: $json", )
+                retrofitHelper.remoteServices.checkLogin(json)
             } catch (ex: Exception) {
+                ex.printStackTrace()
                 null
             }
         }

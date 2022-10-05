@@ -1,7 +1,7 @@
 package com.vn.fchat.ui.utils
 
 object Constants {
-    const val BASE_URL = "http://10.0.2.2:8080/ChatAppServer/"
+    const val BASE_URL = "https://c4c3-2001-ee0-41c1-237a-a51a-8eb0-5d98-2cbd.ap.ngrok.io/ChatAppServer/"
     const val LOGIN_URL = "login"
     const val LOGIN_TYPE = "login"
 }

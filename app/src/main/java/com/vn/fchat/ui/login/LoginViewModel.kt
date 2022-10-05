@@ -25,7 +25,6 @@ class LoginViewModel(val app: Application) : ViewModel() {
 
             viewModelScope.launch(Dispatchers.IO) {
                 val res =  userRepository.checkLogin(user)
-                Log.e("----", "checkLogin: $res", )
                 if (res != null) {
                     loginResult.postValue(DataResponse.DataSuccess(res))
                 }

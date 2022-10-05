@@ -38,7 +38,7 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.viewModel = mViewModel
         binding.loginBtn.setOnClickListener {
-            mViewModel.checkLogin(User("", binding.phoneEditTxt.text.toString(), binding.passwordEditTxt.text.toString()))
+            mViewModel.checkLogin(User("tran dang dung", binding.phoneEditTxt.text.toString(), binding.passwordEditTxt.text.toString()))
         }
     }
 

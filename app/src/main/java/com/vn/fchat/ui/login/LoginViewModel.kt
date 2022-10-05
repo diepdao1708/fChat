@@ -1,18 +1,20 @@
 package com.vn.fchat.ui.login
 
-import android.app.Application
-import android.util.Log
 import androidx.lifecycle.*
 import com.vn.fchat.data.api.response.DataResponse
 import com.vn.fchat.data.api.response.LoadingStatus
 import com.vn.fchat.data.api.response.loginresponse.LoginResponse
 import com.vn.fchat.data.model.User
 import com.vn.fchat.data.repository.UserRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class LoginViewModel(val app: Application) : ViewModel() {
-    private val userRepository = UserRepository(app)
+@HiltViewModel
+class LoginViewModel @Inject constructor(
+    private val userRepository: UserRepository
+) : ViewModel() {
     var loginResult = MutableLiveData<DataResponse<LoginResponse>>(DataResponse.DataIdle())
 
     val isLoading: LiveData<Boolean> = Transformations.map(loginResult) {
@@ -24,24 +26,13 @@ class LoginViewModel(val app: Application) : ViewModel() {
             loginResult.value!!.loadingStatus = LoadingStatus.Loading
 
             viewModelScope.launch(Dispatchers.IO) {
-                val res =  userRepository.checkLogin(user)
+                val res = userRepository.checkLogin(user)
                 if (res != null) {
                     loginResult.postValue(DataResponse.DataSuccess(res))
-                }
-                else {
+                } else {
                     loginResult.postValue(DataResponse.DataError())
                 }
             }
-        }
-    }
-
-    class Factory(private val app: Application) :
-        ViewModelProvider.NewInstanceFactory() {
-        override fun <T : ViewModel> create(modelClass: Class<T>): T {
-            if (modelClass.isAssignableFrom(LoginViewModel::class.java)) {
-                return LoginViewModel(app) as T
-            }
-            throw IllegalArgumentException("Unknown ViewModel Class")
         }
     }
 }

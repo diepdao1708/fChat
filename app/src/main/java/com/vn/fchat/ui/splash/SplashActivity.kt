@@ -12,8 +12,10 @@ import com.vn.fchat.databinding.ActivitySplashBinding
 import com.vn.fchat.ui.AuthActivity
 import com.vn.fchat.ui.MainActivity
 import com.vn.fchat.ui.utils.setFullScreen
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
+@AndroidEntryPoint
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
 

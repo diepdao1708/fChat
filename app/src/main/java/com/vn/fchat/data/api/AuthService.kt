@@ -4,10 +4,9 @@ import com.vn.fchat.data.api.response.loginresponse.LoginResponse
 import com.vn.fchat.ui.utils.Constants.LOGIN_URL
 import retrofit2.http.*
 
-interface RemoteServices {
+interface AuthService {
 
     @POST(LOGIN_URL)
-    suspend fun checkLogin(
-        @Body user: String
-    ): LoginResponse
+    suspend fun checkLogin(@Body user: String): LoginResponse
+
 }

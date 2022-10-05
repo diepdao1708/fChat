@@ -9,7 +9,9 @@ import androidx.navigation.ui.setupWithNavController
 import com.vn.fchat.R
 import com.vn.fchat.databinding.ActivityMainBinding
 import com.vn.fchat.ui.utils.setKeyboardVisibilityListener
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding

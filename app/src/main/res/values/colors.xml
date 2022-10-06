@@ -11,4 +11,6 @@
     <color name="blue__text_color">#FF036BB9</color>
     <color name="blue__button_color">#FF2F80ED</color>
     <color name="blue__stroke_color">#FF036BB9</color>
+
+    <color name="background_color">#fff8f8f8</color>
 </resources>

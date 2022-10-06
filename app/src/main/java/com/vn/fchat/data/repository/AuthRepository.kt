@@ -7,13 +7,13 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
-interface UserRepository {
+interface AuthRepository {
     suspend fun checkLogin(user: User): LoginResponse?
 }
 
-class UserRepositoryImpl @Inject constructor(
+class AuthRepositoryImpl @Inject constructor(
     private val service: AuthService,
-) : UserRepository {
+) : AuthRepository {
     override suspend fun checkLogin(user: User): LoginResponse? =
         withContext(Dispatchers.Default) {
             try {

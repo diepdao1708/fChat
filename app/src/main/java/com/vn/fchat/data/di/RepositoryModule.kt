@@ -1,8 +1,8 @@
 package com.vn.fchat.data.di
 
 import com.vn.fchat.data.api.AuthService
-import com.vn.fchat.data.repository.UserRepository
-import com.vn.fchat.data.repository.UserRepositoryImpl
+import com.vn.fchat.data.repository.AuthRepository
+import com.vn.fchat.data.repository.AuthRepositoryImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -14,5 +14,5 @@ import javax.inject.Singleton
 class RepositoryModule {
     @Provides
     @Singleton
-    fun provideUserRepository(service: AuthService): UserRepository = UserRepositoryImpl(service)
+    fun provideUserRepository(service: AuthService): AuthRepository = AuthRepositoryImpl(service)
 }

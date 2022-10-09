@@ -9,7 +9,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.vn.fchat.databinding.ActivitySplashBinding
-import com.vn.fchat.ui.AuthActivity
+import com.vn.fchat.ui.auth.AuthActivity
 import com.vn.fchat.ui.MainActivity
 import com.vn.fchat.ui.utils.setFullScreen
 import dagger.hilt.android.AndroidEntryPoint

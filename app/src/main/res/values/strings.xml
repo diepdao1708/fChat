@@ -23,4 +23,6 @@
     <string name="remember_password">Remember password</string>
     <string name="forget_password"><font color="#FF036BB9">Forget password</font></string>
     <string name="register">Register</string>
+    <string name="logo">Logo</string>
+    <string name="auth__login_fail">Login Fail</string>
 </resources>

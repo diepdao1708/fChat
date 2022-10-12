@@ -14,10 +14,19 @@
         android:id="@+id/recentCallsFragment"
         android:name="com.vn.fchat.ui.calls.RecentCallsFragment"
         android:label="fragment_recent_calls"
-        tools:layout="@layout/fragment_recent_calls" />
+        tools:layout="@layout/fragment_recent_calls" >
+        <action
+            android:id="@+id/action_recentCallsFragment_to_detailChatFragment"
+            app:destination="@id/detailChatFragment" />
+    </fragment>
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.vn.fchat.ui.settings.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/detailChatFragment"
+        android:name="com.vn.fchat.ui.chats.DetailChatFragment"
+        android:label="fragment_detail_chat"
+        tools:layout="@layout/fragment_detail_chat" />
 </navigation>

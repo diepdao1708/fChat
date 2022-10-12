@@ -33,7 +33,7 @@ class SplashActivity : AppCompatActivity() {
             launch {
                 viewModel.events.collect { event ->
                     when (event) {
-                        is SplashViewModel.Event.NavigateToLogin -> navigateTo(AuthActivity::class.java)
+                        is SplashViewModel.Event.NavigateToLogin -> navigateTo(MainActivity::class.java)
                         is SplashViewModel.Event.NavigateToHome -> navigateTo(MainActivity::class.java)
                     }
                 }

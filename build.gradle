@@ -17,7 +17,7 @@ ext {
     glide_version = '4.13.0'
     dagger_version = '2.35.1'
     event_bus_version = '3.3.1'
-
+    experimental = true
     nav_component_lib = [
             "androidx.navigation:navigation-fragment:$nav_version",
             "androidx.navigation:navigation-ui-ktx:$nav_version"

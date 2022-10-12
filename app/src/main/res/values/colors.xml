@@ -13,4 +13,8 @@
     <color name="blue__stroke_color">#FF036BB9</color>
 
     <color name="background_color">#fff8f8f8</color>
+
+    <color name="background_item_chat_opposite">#F7F7F7</color>
+    <color name="background_item_chat_user">#2F80ED</color>
+    <color name="color_orange">#F2994A</color>
 </resources>

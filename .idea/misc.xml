@@ -3,28 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/3. KOTLIN PROJECT/fChat/app/src/main/res/layout/fragment_login.xml" value="0.25" />
-        <entry key="..\:/KI7/lap_trinh_mang/fChat/app/src/main/res/drawable-xxhdpi/rounded_white.xml" value="0.201" />
-        <entry key="..\:/KI7/lap_trinh_mang/fChat/app/src/main/res/drawable/bottom_navigation_view_selector.xml" value="0.1365" />
-        <entry key="..\:/KI7/lap_trinh_mang/fChat/app/src/main/res/drawable/ic_chats.xml" value="0.1295" />
-        <entry key="..\:/KI7/lap_trinh_mang/fChat/app/src/main/res/drawable/rounded_button_blue.xml" value="0.199" />
-        <entry key="..\:/KI7/lap_trinh_mang/fChat/app/src/main/res/drawable/rounded_button_white.xml" value="0.2" />
-        <entry key="..\:/KI7/lap_trinh_mang/fChat/app/src/main/res/font/.xml" value="0.20677083333333332" />
-        <entry key="..\:/KI7/lap_trinh_mang/fChat/app/src/main/res/font/roboto_slab.xml" value="0.20729166666666668" />
-        <entry key="..\:/KI7/lap_trinh_mang/fChat/app/src/main/res/layout/activity_auth.xml" value="0.35520833333333335" />
-        <entry key="..\:/KI7/lap_trinh_mang/fChat/app/src/main/res/layout/activity_login.xml" value="0.3411458333333333" />
-        <entry key="..\:/KI7/lap_trinh_mang/fChat/app/src/main/res/layout/activity_main.xml" value="0.12447916666666667" />
-        <entry key="..\:/KI7/lap_trinh_mang/fChat/app/src/main/res/layout/activity_splash.xml" value="0.35520833333333335" />
-        <entry key="..\:/KI7/lap_trinh_mang/fChat/app/src/main/res/layout/fragment_login.xml" value="0.3333333333333333" />
-        <entry key="..\:/KI7/lap_trinh_mang/fChat/app/src/main/res/layout/fragment_recent_calls.xml" value="0.22" />
-        <entry key="..\:/KI7/lap_trinh_mang/fChat/app/src/main/res/layout/fragment_recent_chats.xml" value="0.12447916666666667" />
-        <entry key="..\:/KI7/lap_trinh_mang/fChat/app/src/main/res/layout/fragment_register.xml" value="0.35520833333333335" />
-        <entry key="..\:/KI7/lap_trinh_mang/fChat/app/src/main/res/layout/fragment_settings.xml" value="0.12447916666666667" />
-        <entry key="..\:/KI7/lap_trinh_mang/fChat/app/src/main/res/menu/bottom_nav_home.xml" value="0.18854166666666666" />
+        <entry key="..\:/AndroidStudioProjects/fChat/app/src/main/res/drawable/bg_rounder_blue.xml" value="0.3245" />
+        <entry key="..\:/AndroidStudioProjects/fChat/app/src/main/res/drawable/bg_rounder_gray.xml" value="0.3245" />
+        <entry key="..\:/AndroidStudioProjects/fChat/app/src/main/res/drawable/ic_more.xml" value="0.262" />
+        <entry key="..\:/AndroidStudioProjects/fChat/app/src/main/res/drawable/rounder_oval_blue_10sp.xml" value="0.3245" />
+        <entry key="..\:/AndroidStudioProjects/fChat/app/src/main/res/font/roboto_slab.xml" value="0.38125" />
+        <entry key="..\:/AndroidStudioProjects/fChat/app/src/main/res/layout/activity_auth.xml" value="0.35104166666666664" />
+        <entry key="..\:/AndroidStudioProjects/fChat/app/src/main/res/layout/activity_main.xml" value="0.35104166666666664" />
+        <entry key="..\:/AndroidStudioProjects/fChat/app/src/main/res/layout/fragment_detail_chat.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/fChat/app/src/main/res/layout/fragment_recent_calls.xml" value="0.35104166666666664" />
+        <entry key="..\:/AndroidStudioProjects/fChat/app/src/main/res/layout/fragment_recent_chats.xml" value="0.5" />
+        <entry key="..\:/AndroidStudioProjects/fChat/app/src/main/res/layout/item_current_chat.xml" value="0.12708333333333333" />
+        <entry key="..\:/AndroidStudioProjects/fChat/app/src/main/res/layout/item_current_user_chat.xml" value="0.35" />
+        <entry key="..\:/AndroidStudioProjects/fChat/app/src/main/res/layout/item_message_send.xml" value="0.14273504273504273" />
+        <entry key="..\:/AndroidStudioProjects/fChat/app/src/main/res/layout/item_opposite_chat.xml" value="0.35" />
+        <entry key="..\:/AndroidStudioProjects/fChat/app/src/main/res/layout/item_recent_chat.xml" value="0.35" />
+        <entry key="..\:/AndroidStudioProjects/fChat/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3245" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
